@@ -1,0 +1,45 @@
+.sitemap-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sitemap-home {
+    margin-bottom: 0;
+}
+
+.sitemap-link {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.sitemap-sublist {
+    list-style: none;
+    padding-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sitemap-sublist li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.sitemap-sublist li::before {
+    content: '.';
+    color: var(--color-primario);
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+}
+
+.sitemap-sublist li a {
+    color: var(--color-gris-oscuro);
+    text-decoration: none;
+}
+
+.sitemap-main-pages {
+    list-style: none;
+    padding-left: 40px;
+    margin-top: 20px;
+}

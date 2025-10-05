@@ -1,0 +1,44 @@
+.valor-card {
+    padding: 30px 20px;
+    background-color: var(--color-blanco);
+    border-radius: 15px;
+    box-shadow: var(--sombra-suave);
+    height: 100%;
+}
+
+.valor-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-primario-claro);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-item {
+    padding: 20px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+}
+
+.tech-icon {
+    width: 60px;
+    min-width: 60px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .valor-card {
+        margin-bottom: 20px;
+    }
+
+    .tech-item {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .tech-icon {
+        margin: 0 auto 15px !important;
+    }
+}

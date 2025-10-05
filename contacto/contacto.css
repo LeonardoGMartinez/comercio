@@ -1,0 +1,40 @@
+.contact-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: var(--sombra-suave);
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-primario-claro);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.map-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--sombra-media);
+}
+
+.horarios-table tr {
+    border-bottom: 1px solid var(--color-gris-claro);
+}
+
+.horarios-table tr:last-child {
+    border-bottom: none;
+}
+
+.horarios-table td {
+    padding: 15px 0;
+}
+
+@media (max-width: 768px) {
+    .map-wrapper iframe {
+        height: 300px;
+    }
+}

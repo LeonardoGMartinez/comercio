@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* ==========================================
+   VARIABLES DE COLORES
+   Paleta basada en logo celeste con letras negras
+   Evocando momentos eternos e infinitos
+   ========================================== */
+:root {
+    /* Colores principales */
+    --color-primario: #00BCD4;        /* Celeste principal del logo */
+    --color-primario-oscuro: #0097A7;  /* Celeste oscuro */
+    --color-primario-claro: #B2EBF2;   /* Celeste claro */
+
+    /* Colores secundarios */
+    --color-secundario: #1A1A1A;       /* Negro de las letras del logo */
+    --color-gris-oscuro: #333333;      /* Gris oscuro para textos */
+    --color-gris-medio: #666666;       /* Gris medio */
+    --color-gris-claro: #E0E0E0;       /* Gris claro para fondos */
+
+    /* Colores complementarios para evocar eternidad */
+    --color-acento-dorado: #FFD700;    /* Dorado para detalles especiales */
+    --color-blanco: #FFFFFF;
+    --color-fondo: #F5F5F5;
+
+    /* Tipografías */
+    --fuente-titulos: 'Playfair Display', serif;
+    --fuente-texto: 'Montserrat', sans-serif;
+
+    /* Sombras */
+    --sombra-suave: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --sombra-media: 0 4px 16px rgba(0, 0, 0, 0.15);
+    --sombra-fuerte: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+    /* Transiciones */
+    --transicion-rapida: all 0.3s ease;
+    --transicion-media: all 0.5s ease;
+}
+
+/* ==========================================
+   RESET Y ESTILOS BASE
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente-texto);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-gris-oscuro);
+    background-color: var(--color-fondo);
+}
+
+/* ==========================================
+   TIPOGRAFÍA
+   ========================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    color: var(--color-secundario);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ==========================================
+   ENLACES
+   ========================================== */
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    transition: var(--transicion-rapida);
+}
+
+a:hover {
+    color: var(--color-primario-oscuro);
+}
+
+/* ==========================================
+   BOTONES CON ANIMACIONES HOVER
+   ========================================== */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-family: var(--fuente-texto);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transicion-rapida);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primario {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    box-shadow: var(--sombra-suave);
+}
+
+.btn-primario:hover {
+    background-color: var(--color-primario-oscuro);
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.btn-primario:active {
+    transform: translateY(-1px);
+}
+
+.btn-secundario {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    box-shadow: var(--sombra-suave);
+}
+
+.btn-secundario:hover {
+    background-color: var(--color-gris-oscuro);
+    transform: translateY(-3px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    transform: scale(1.05);
+}
+
+/* Efecto de brillo en hover */
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ==========================================
+   HEADER Y NAVEGACIÓN
+   ========================================== */
+header {
+    background-color: var(--color-blanco);
+    box-shadow: var(--sombra-suave);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    padding: 1rem 0;
+}
+
+.navbar {
+    background-color: var(--color-blanco) !important;
+}
+
+.navbar-brand {
+    font-family: var(--fuente-titulos);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-secundario) !important;
+}
+
+.navbar-brand span {
+    color: var(--color-primario);
+}
+
+.navbar-brand img {
+	height: 50px;
+}
+
+.nav-link {
+    color: var(--color-gris-oscuro) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: var(--transicion-rapida);
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--color-primario);
+    transition: var(--transicion-rapida);
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 80%;
+}
+
+.nav-link:hover {
+    color: var(--color-primario) !important;
+}
+
+/* ==========================================
+   SECCIONES
+   ========================================== */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+
+/* ==========================================
+   CARDS
+   ========================================== */
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--sombra-suave);
+    transition: var(--transicion-rapida);
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: var(--fuente-titulos);
+    color: var(--color-secundario);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 40px 0 20px;
+    margin-top: 80px;
+}
+
+footer h5 {
+    color: var(--color-primario);
+    font-family: var(--fuente-titulos);
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: var(--color-gris-claro);
+    transition: var(--transicion-rapida);
+}
+
+footer a:hover {
+    color: var(--color-primario);
+}
+
+footer .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--color-gris-oscuro);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: var(--transicion-rapida);
+}
+
+footer .social-links a:hover {
+    background-color: var(--color-gris-medio);
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   UTILIDADES
+   ========================================== */
+.bg-primario {
+    background-color: var(--color-primario);
+}
+
+.bg-secundario {
+    background-color: var(--color-secundario);
+}
+
+.text-primario {
+    color: var(--color-primario);
+}
+
+.text-secundario {
+    color: var(--color-secundario);
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+}

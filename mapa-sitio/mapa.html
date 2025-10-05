@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capa x Capa - Impresión 3D</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="mapa.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagenes/logo/logo_horizontal.png"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../nosotros/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../catalogo/catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../escaneo-3d/escaneo.html">Escaneo 3D</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../impresion-personalizada/impresion.html">Impresión Personalizada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-primario text-white text-center py-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold text-white">Mapa del Sitio</h1>
+                <p class="lead">Encontrá las secciones del sitio</p>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="card shadow-lg">
+                            <div class="card-body p-5">
+                                <ul class="sitemap-list">
+                                    <li class="sitemap-item sitemap-home">
+                                        <i class="bi bi-house-door-fill text-primario me-2"></i>
+                                        <a href="../index.html" class="sitemap-link"><strong>Inicio</strong></a>
+                                        <ul class="sitemap-sublist">
+                                            <li><a href="../index.html#servicios">Servicios</a></li>
+                                            <li><a href="../index.html#por-que-elegirnos">Por Qué Elegirnos</a></li>
+                                        </ul>
+
+                                        <ul class="sitemap-main-pages">
+                                            <li class="sitemap-page">
+                                                <i class="bi bi-people-fill text-primario me-2"></i>
+                                                <a href="../nosotros/nosotros.html" class="sitemap-link"><strong>Nosotros</strong></a>
+                                                <ul class="sitemap-sublist">
+                                                    <li><a href="../nosotros/nosotros.html">Nuestra Historia</a></li>
+                                                    <li><a href="../nosotros/nosotros.html">Misión y Visión</a></li>
+                                                    <li><a href="../nosotros/nosotros.html">Nuestros Valores</a></li>
+                                                    <li><a href="../nosotros/nosotros.html">Tecnología</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="sitemap-page">
+                                                <i class="bi bi-cart-fill text-primario me-2"></i>
+                                                <a href="../catalogo/catalogo.html" class="sitemap-link"><strong>Catálogo</strong></a>
+                                                <ul class="sitemap-sublist">
+                                                    <li><a href="../catalogo/catalogo.html#figuras">Figuras Impresas 3D</a></li>
+                                                    <li><a href="../catalogo/catalogo.html#accesorios">Accesorios y Decoraciones</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="sitemap-page">
+                                                <i class="bi bi-camera-fill text-primario me-2"></i>
+                                                <a href="../escaneo-3d/escaneo.html" class="sitemap-link"><strong>Escaneo 3D</strong></a>
+                                                <ul class="sitemap-sublist">
+                                                    <li><a href="../escaneo-3d/escaneo.html#proceso">Proceso de Escaneo</a></li>
+                                                    <li><a href="../escaneo-3d/escaneo.html#precios">Trabajos realizados</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="sitemap-page">
+                                                <i class="bi bi-printer-fill text-primario me-2"></i>
+                                                <a href="../impresion-personalizada/impresion.html" class="sitemap-link"><strong>Impresión Personalizada</strong></a>
+                                                <ul class="sitemap-sublist">
+                                                    <li><a href="../impresion-personalizada/impresion.html#especificaciones">Especificaciones Técnicas</a></li>
+                                                    <li><a href="../impresion-personalizada/impresion.html#proceso">Proceso de Impresión</a></li>
+                                                    <li><a href="../impresion-personalizada/impresion.html#cotizacion">Servicios Adicionales</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="sitemap-page">
+                                                <i class="bi bi-envelope-fill text-primario me-2"></i>
+                                                <a href="../contacto/contacto.html" class="sitemap-link"><strong>Contacto</strong></a>
+                                                <ul class="sitemap-sublist">
+                                                    <li><a href="../contacto/contacto.html">Información de Contacto</a></li>
+                                                    <li><a href="../contacto/contacto.html">Horarios de Atención</a></li>
+                                                    <li><a href="../contacto/contacto.html#mapa">Ubicación y Mapa</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>Capa x Capa</h5>
+                    <p class="text-light">Momentos infinitos en cada impresión.<br>Encontranos en:</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../catalogo/catalogo.html">Catálogo</a></li>
+                        <li><a href="../escaneo-3d/escaneo.html">Escaneo 3D</a></li>
+                        <li><a href="../impresion-personalizada/impresion.html">Impresión Personalizada</a></li>
+                        <li><a href="mapa.html">Mapa del Sitio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill text-primario"></i> Microcentro, Buenos Aires, Argentina</li>
+                        <li><i class="bi bi-envelope-fill text-primario"></i> info@capaxcapa.com.ar</li>
+                        <li><i class="bi bi-telephone-fill text-primario"></i> +54 11 1234-5678</li>
+                        <li><i class="bi bi-clock-fill text-primario"></i> Lun-Vie: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
